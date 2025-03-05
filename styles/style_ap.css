@@ -185,7 +185,7 @@ footer {
 /* Responsividad */
 
 /* Pantallas de al menos 768px de ancho (Tablets) */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
 
     #header_bar {
         flex-direction: column;
