@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Gothic+A1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*{
+    border:#000000 1px solid;
+}*/
+
+html {
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 16px;
+    color: #222;
+}
+
+body{
+    margin: 0;
+    padding:0;
+    background-color: #3B3F41;
+}
+
+h1{
+    font-family: 'Gothic A1',
+    sans-serif;
+    font-weight: bolder;
+}
+
+/*Estilo Header*/
+header{
+    background-color:#F1F1F1;
+    color:#373B3E;
+}
+
+
+#header_bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-bottom: #E12885 5px solid;
+}
+
+#logo{
+    margin: 1%;
+}
+
+.header_center{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.header_right{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 1%;
+}
+
+.header_right a img{
+    max-width: 70px;
+    max-height: 70px;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 90%;
+}
+
+ nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    width: 100%;
+    list-style: none;
+    font-family: "Gothic A1";
+    color: #373B3E;
+    
+}
+
+
+.searchbar{
+    align-self:center;
+    width:90%;
+    max-height: 30px;
+    display:flex;
+    align-items:center;
+    border-radius: 60px;
+    padding: 10px 15px;
+    margin: 1%;
+    background-color: #137A7F ;
+}
+
+.searchbar input{
+    background-color: transparent;
+    flex-grow:1;
+    border: 0;
+    outline: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #F1F1F1;
+}
+
+.searchbar button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.searchbar button img{
+   width: 20px;
+   height: 20px;
+   border: none;
+   outline: none;
+   filter: brightness(0)invert(1);
+}
+
+.searchbar input::placeholder{color: #F1F1F1}
+
+/*Estilo Main Agregar Producto*/
+#container{
+    background-color: #137A7F;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    color:#F1F1F1
+}
+
+#container .info{
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60%;
+}
+
+#datosProducto{
+    justify-self: start;
+}
+
+#imagenProducto{
+    align-self: flex-start;
+    justify-self: end;
+}
+
+#container .botones{
+    justify-content: start;
+    align-content: baseline;
+    margin-top:20px;
+}
+
+#container input{
+    border: 2px #3B3F41 solid;
+    border-radius: 5px;
+}
+
+#container button{
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 2px #3B3F41 solid;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*#container h1{
+    color:#F1F1F1;
+    justify-self: center;
+    margin-top: 0px;
+    padding-top: 10px;
+}*/
+
+
+
+/*Estilo Footer*/
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222324;
+    color: #86CECB;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+/* Responsividad */
+
+/* Pantallas de al menos 768px de ancho (Tablets) */
+@media (min-width: 768px) {
+
+    #header_bar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #container {
+        flex: 2 1 65%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    #container .info {
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+}
+
+/* Pantallas de al menos 1024px de ancho (Desktops) */
+@media (min-width: 1024px) {
+    #header_bar {
+        flex-wrap: nowrap;
+    }
+
+    #container {
+        flex: 2 1 70%;
+    }
+
+}
+
+/* Pantallas menores a 768px de ancho (Celulares) */
+@media (max-width: 768px) {
+   
+    #header_bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    footer {
+        padding: 0.5rem;
+    }
+}

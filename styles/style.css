@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Gothic+A1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+ /*{
+    border:#000000 1px solid;
+}*/
+
+/*Estilo General*/
+html {
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 16px;
+    color: #222;
+}
+
+body{
+    margin: 0;
+    padding:0;
+    background-color: #3B3F41;
+}
+
+h1{
+    font-family: 'Gothic A1',
+    sans-serif;
+    font-weight: bolder;
+    color: #E12885
+}
+
+h2{
+    font-family: 'Gothic A1',
+    sans-serif;
+    font-weight: bolder;
+}
+
+/*Estilo Header*/
+header{
+    background-color:#F1F1F1;
+    color:#373B3E;
+}
+
+
+#header_bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-bottom: #E12885 5px solid;
+}
+
+#logo{
+    margin: 1%;
+}
+
+.header_center{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.header_right{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 1%;
+}
+
+.header_right a img{
+    max-width: 70px;
+    max-height: 70px;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 90%;
+}
+
+ nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    width: 100%;
+    list-style: none;
+    font-family: "Gothic A1";
+    color: #373B3E;
+    
+}
+
+
+.searchbar{
+    align-self:center;
+    width:90%;
+    max-height: 30px;
+    display:flex;
+    align-items:center;
+    border-radius: 60px;
+    padding: 10px 15px;
+    margin: 1%;
+    background-color: #137A7F ;
+}
+
+.searchbar input{
+    background-color: transparent;
+    flex-grow:1;
+    border: 0;
+    outline: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #F1F1F1;
+}
+
+.searchbar button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.searchbar button img{
+   width: 20px;
+   height: 20px;
+   border: none;
+   outline: none;
+   filter: brightness(0)invert(1);
+}
+
+::placeholder{color: #F1F1F1}
+
+/*Estilo Footer*/
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222324;
+    color: #86CECB;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+button {
+    background-color: #137A7F;
+    color: #F1F1F1;       
+    font-size: 20px;    
+    font-weight: bolder;
+    border: none;      
+    padding: 10px 20px;  
+    border-radius: 5px;      
+    cursor: pointer;        
+    margin-left: 0;          
+}
+
+#header_container {
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;  
+    padding: 20px 10px;  
+    margin: 0 50px;
+}
+
+.producto {
+    display: flex;
+    flex-direction: row; 
+    background-color: #F1F1F1;
+    border-radius: 8px; 
+    margin: 15px 50px;  
+    padding: 20px; 
+    align-items: center; 
+    gap: 20px;  
+}
+
+.producto div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.producto button {
+    display: flex;
+    background-color: #137A7F;  
+    color: #F1F1F1; 
+    font-size: 14px; 
+    padding: 8px 12px; 
+    border: none;  
+    border-radius: 5px;   
+    margin: 5px 0;  
+    justify-content: flex-end;
+}
+
+.producto .tags {
+    list-style: none; 
+    padding: 0;  
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 8px;  
+}
+
+.producto .tags li {
+    background-color: #137A7F;  
+    color: #F1F1F1;        
+    padding: 8px 15px;       
+    font-size: 14px;   
+    border-radius: 5px; 
+    cursor: pointer;   
+}

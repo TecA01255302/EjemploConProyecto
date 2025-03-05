@@ -1,0 +1,67 @@
+<!--Por Araceli Ruiz Sánchez (A01255302) y Sebastián Blanchet (A00227588)-->
+<!--25 de feb de 2025-->
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Producto</title>
+    <link rel="stylesheet" href="/styles/style_ap.css">
+</head>
+<body>
+    <header>
+        <div id="header_bar">
+            <div id="logo"> <image src="/media/logo_ph.png" alt="Logo"></div>
+           <div class="header_center">
+
+               <div class="searchbar">
+                   <input type="text" placeholder="Buscar Productos">
+                   <button type="submit"><img src="/media/search.svg" alt="Buscar"></button>
+                </div>
+                <nav>
+                    <ul>
+                        <li> <a href="#"> Artistas</a> </li>
+                        <li> <a href="misProductos.html">Mis Productos</a></li>
+                        <li> <a href="#">Promociones</a></li>
+                    </ul>
+                </nav>
+            </div> 
+            <div class="header_right">
+                <a href="#" id="Lista de Compras"><img src="/media/bag.svg" alt="Icono de Compras"></a>
+                <a href="#" id="perfil"><img src="/media/perfil.png" alt="Icono de Perfil"></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="container">
+            <h1>Agregar Producto</h1>
+            <div class="info">
+                <div id="datosProducto">
+                    <p>Nombre del Producto</p>
+                    <input type="text" placeholder="Nombre">
+                    <p>Precio</p>
+                    <input type="number" placeholder="$0">
+                    <p>Descripción</p>
+                    <input type="text" placeholder="Detalles del producto">
+                    <p>Agregar Etiquetas</p>
+                    <input type="text" placeholder="Etiqueta">
+                </div>
+                <div id="imagenProducto">
+                    <p>Insertar Imagen</p>
+                    <input type="file" name="image"> 
+                </div>
+                <div class="botones">
+                    <button>Cancelar</button>
+                    <button>Crear Producto</button>
+                </div>
+            </div>
+        </div>
+    </main>
+   <footer>
+    <p>Contactanos: +6622825673</p>
+    <p>Negocio@mail.com</p>
+    <a href="#">Políticas de la Tienda</a>
+   </footer> 
+    
+</body>
+</html>

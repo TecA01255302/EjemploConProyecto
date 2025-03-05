@@ -1,0 +1,91 @@
+<!--Por Araceli Ruiz Sánchez (A01255302) y Sebastián Blanchet (A00227588)-->
+<!--25 de feb de 2025-->
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Productos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="header_bar">
+            <div id="logo"> <image src="./media/logo_ph.png" alt="Logo"></div>
+           <div class="header_center">
+
+               <div class="searchbar">
+                   <input type="text" placeholder="Buscar Productos">
+                   <button type="submit"><img src="./media/search.svg" alt="Buscar"></button>
+                </div>
+                <nav>
+                    <ul>
+                        <li> <a href="#"> Artistas</a> </li>
+                        <li> <a href="misProductos.html">Mis Productos</a></li>
+                        <li> <a href="#">Promociones</a></li>
+                    </ul>
+                </nav>
+            </div> 
+            <div class="header_right">
+                <a href="#" id="Lista de Compras"><img src="./media/bag.svg" alt="Icono de Compras"></a>
+                <a href="#" id="perfil"><img src="./media/perfil.png" alt="Icono de Perfil"></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="container">
+            <div id="header_container">
+                <h1><u>Mis Productos</u></h1>
+                <!--Son productos temporales por lo que solo tienen valores placeholders-->
+                <button onclick=location.href="agregarProducto.html">Agregar Producto</button>
+            </div>
+            <article>
+                <section class="producto">
+                    <!--el ajuste de tamaño es temporal en lo que se agrega css-->                    
+                    <div> <img src="./media/p2.jpg" width="500px"></div>
+                    <div> 
+                        <h2>Producto1</h2>
+                        <p>Precio</p>
+                        <p>Descripción</p>
+                        <ul class ="tags">
+                            <li>tag1</li>
+                            <li>tag2</li>
+                            <li>tag3</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <button onclick=location.href="#">Modificar</button>
+                        <button>Eliminar</button>
+                    </div>
+                </section>
+
+                <section class="producto">
+                    <!--el ajuste de tamaño es temporal en lo que se agrega css-->                    
+                    <div> <img src="./media/p1.jpeg" width="500px"></div>
+                    <div> 
+                        <h2>Producto2</h2>
+                        <p>Precio2</p>
+                        <p>Descripción2</p>
+                        <ul class ="tags">
+                            <li>tag1</li>
+                            <li>tag2</li>
+                            <li>tag3</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <button onclick=location.href="#">Modificar</button>
+                        <button>Eliminar</button>
+                    </div>
+                </section>
+
+            </article>
+        </div>
+
+    </main>
+    <footer>
+        <p>Contactanos: +6622825673 </p>
+        <p>Negocio@mail.com</p>
+        <a href="#">Políticas de la Tienda</a>
+    </footer>
+</body>
+</html>
